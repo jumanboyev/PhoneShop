@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Commons\Helpers\" />
+    <Folder Include="Commons\Attributes\" />
+    <Folder Include="Commons\Exseptions\" />
+    <Folder Include="Commons\Security\" />
+    <Folder Include="Commons\Validations\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PhoneShop.DataAccess\PhoneShop.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -7,18 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commons\Helpers\" />
     <Folder Include="Commons\Attributes\" />
     <Folder Include="Commons\Exseptions\" />
     <Folder Include="Commons\Security\" />
     <Folder Include="Commons\Validations\" />
-    <Folder Include="Dtos\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.143" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+    <PackageReference Include="Npgsql" Version="7.0.4" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\PhoneShop.DataAccess\PhoneShop.DataAccess.csproj" />
   </ItemGroup>
-
+	
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
 </Project>
